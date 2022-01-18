@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyumri Spirit | Контакт</title>
+    <link rel="icon" href="../../../img/logo.jpg">
+    <link rel="stylesheet" href="../../../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style media="screen">
+  .content-01 .tx-01 h1, .content-01 .tx-01 p, .menu-list li a{
+    font-family: Comfortaa;
+  }
+  </style>
+  <section class="sec">
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="../../../img/logo-04.png" alt="Logo">
+          </a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fa fa-times"></i>
+          </div>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="bildings.html">Здания</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="#" class="active">Контакт</a></li>
+
+          <div class="language">
+            <a href="../arm/contact.html"><img src="../../../img/flags/armenia-flag.png" alt="Armenian"></a>
+            <a href="#"><img class="active" src="../../../img/flags/russia-flag.png" alt="Русский"></a>
+            <a href="../../../contact.html"><img  src="../../../img/flags/usa.png" alt="English"></a>
+          </div>
+          <div class="mode">
+            <div class="toggle"></div>
+          </div>
+        </ul>
+
+        <div class="icon menu-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="banner">
+        <div class="container-02">
+          <div class="content-01">
+            <div class="mm">
+              <div class="tx-01">
+                <h1>Контакт</h1>
+                <p><a href="#second">Спускаться <i class="fa fa-arrow-circle-o-down"></i></a></p>
+            </div>
+            <div class="dec">
+              <p>+++++<br>+++++<br>+++++<br>+++++<br>+++++</p>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="form" id="second">
+      <form method="post" action>
+        <div class="signinform">
+          <div class="text">
+        <h1>Ваше мнение</h1>
+      </div>
+        <div class="inputs">
+          <input id="name" class="a2" type="text" placeholder="Your Name">
+          <input id="email" class="a2" type="email" placeholder="Email Address">
+          <textarea id="body" class="a3" name="text" rows="8" cols="80" placeholder="Your Text"></textarea>
+
+        </div>
+
+      <div class="checkbox">
+        <div class="check-01">
+          <div class="ch1">
+            <input type="radio" name="contact" value="email" checked>
+            <label for="contactChoice1">Иностранец</label>
+          </div>
+          <div class="ch2">
+            <input type="radio"  name="contact" value="phone">
+              <label for="contactChoice2">Гражданин Республики Армения</label>
+          </div>
+        </div>
+      </div>
+        <div class="bt">
+          <input class="butt" type="submit"  value="SEND">
+        </div>
+    </div>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook-f"></i></a>
+      <a href="#"><i class="fa fa-paper-plane"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+    </form>
+
+    </div>
+  </section>
+
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+    const sec = document.querySelector('.sec');
+    const toggle = document.querySelector('.toggle');
+    toggle.onclick = function(){
+      sec.classList.toggle('dark')
+    }
+  </script>
+
+</body>
+</html>

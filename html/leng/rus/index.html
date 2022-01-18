@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyumri Spirit | Главная</title>
+    <link rel="icon" href="../../../img/logo.jpg">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style media="screen">
+  @font-face {
+  	font-family: 'Conv_Yerevanyan Bold';
+  	src: url('../../../fonts/Yerevanyan Bold.eot');
+  	src: local('☺'), url('../../../fonts/Yerevanyan Bold.woff') format('woff'), url('../../../fonts/Yerevanyan Bold.ttf') format('truetype'), url('../../../fonts/Yerevanyan Bold.svg') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+  }
+  .menu-list li a{
+    font-family: Comfortaa;
+  }
+  .home{
+    width: 400px;
+    margin-top: 12%;
+    margin-left: -200px;
+    position: fixed;
+    /* background: rgba(242, 135, 5, 0.8); */
+  }
+  .home .text{
+    margin-top: 90px;
+    /* position: absolute; */
+  }
+  .home .text h1{
+    font-size: 70px;
+    color: #ff7700;
+    font-family: Comfortaa;
+    margin-bottom: -10px;
+    margin-left: 70px;
+    text-align: center;
+  }
+  section.dark .home .text h1, section.dark .home .text p{
+    color: #fff;
+  }
+  .home .text p{
+    width: 200px;
+    margin-left: 160px;
+    font-family: Lato;
+    color: #000;
+    text-align: center;
+  }
+  .cr img{
+    width: 500px;
+    position: absolute;
+    margin-top: -85%;
+    margin-left: 30px;
+    z-index: -1;
+  }
+  section.dark .cr img{
+    content: url("../../../img/crn.png");
+  }
+  @media (max-width: 1024px) {
+    .home .text h1{
+      font-family: Conv_Yerevanyan Bold;
+      font-size: 70px;
+      width: 500px;
+      margin-left: 10px;
+      color: #ff7700;
+      margin-bottom: 5px;
+    }
+    .home .text p{
+      width: 200px;
+      margin-left: 170px;
+      font-family: Lato;
+      color: #000;
+    }
+  }
+  @media (max-width: 768px) {
+    .home  .text h1{
+      font-size: 60px;
+      width: 300px;
+      margin-left: 80px;
+      color: #ff7700;
+      margin-bottom: 5px;
+      margin-top: 45%;
+    }
+    .home .text p{
+      width: 180px;
+      margin-left: 140px;
+      color: #000;
+      font-size: 12px;
+    }
+    .home .text{
+      margin-top: -50px;
+    }
+    .cr img{
+      width: 400px;
+      position: absolute;
+      margin-top: -70%;
+      margin-left: 50px;
+    }
+  }
+  @media (max-width: 425px) {
+    .home  .text h1{
+      font-size: 50px;
+      width: 300px;
+      margin-left: 90px;
+      color: #ff7700;
+      margin-bottom: 5px;
+      margin-top: 45%;
+    }
+    .home .text p{
+      width: 150px;
+      margin-left: 150px;
+      color: #000;
+      font-size: 11px;
+    }
+    .home .text{
+      margin-top: -20px;
+    }
+    .cr img{
+      width: 350px;
+      position: absolute;
+      margin-top: -60%;
+      margin-left: 60px;
+      z-index: -1;
+    }
+  }
+  @media (max-width: 320px) {
+    .home  .text h1{
+      font-size: 47px;
+      width: 300px;
+      margin-left: 90px;
+      color: #ff7700;
+      margin-bottom: 5px;
+      margin-top: 45%;
+    }
+    .home .text p{
+      width: 130px;
+      margin-left: 180px;
+      color: #000;
+      font-size: 10px;
+    }
+    .home .text{
+      margin-top: -10px;
+    }
+    .cr img{
+      width: 350px;
+      position: absolute;
+      margin-top: -55%;
+      margin-left: 30px;
+      z-index: -1;
+    }
+  }
+  </style>
+  <section class="sec">
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="../../../img/logo-04.png" alt="Logo">
+          </a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fa fa-times"></i>
+          </div>
+          <li><a href="#" class="active">Главная</a></li>
+          <li><a href="bildings.html">Здания</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contact.html">Контакт</a></li>
+
+          <div class="language">
+            <a href="../arm/index.html"><img src="../../../img/flags/armenia-flag.png" alt="Armenian"></a>
+            <a href="#" ><img class="active" src="../../../img/flags/russia-flag.png" alt="Русский"></a>
+            <a href="../../../index.html"><img  src="../../../img/flags/usa.png" alt="English"></a>
+          </div>
+
+          <div class="mode">
+            <div class="toggle"></div>
+          </div>
+        </ul>
+
+        <div class="icon menu-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="banner">
+      <div class="container-2">
+        <div class="home">
+          <div class="text">
+            <h1>Добро пожаловать</h1>
+            <p>Здесь вы найдете самый интересный сайт Gyumri Spirit.</p>
+          </div>
+          <div class="cr">
+            <img src="../../../img/cr.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+    const sec = document.querySelector('.sec');
+    const toggle = document.querySelector('.toggle');
+    toggle.onclick = function(){
+      sec.classList.toggle('dark')
+    }
+  </script>
+
+</body>
+</html>

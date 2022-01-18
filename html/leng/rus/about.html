@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyumri Spirit | О нас</title>
+    <link rel="icon" href="../../../img/logo.jpg">
+    <link rel="stylesheet" href="../../../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style media="screen">
+  .tx-02 h2{
+    font-family: Comfortaa;
+    text-align: center;
+  }
+  .content-01 .tx-01 h1{
+    font-family: Comfortaa;
+    font-size: 85px;
+    width: 320px;
+    margin-left: -150px;
+  }
+  .content-01 .tx-01 p{
+    font-family: Comfortaa;
+    margin-left: -120px;
+  }
+  .content-01 .tx-01{
+    margin-left: 350px;
+    margin-top: 60%;
+  }
+  .menu-list li a{
+    font-family: Comfortaa;
+  }
+
+  @media (max-width: 1024px) {
+    .content-01 .tx-01 h1{
+      font-family: Comfortaa;
+      font-size: 85px;
+      width: 320px;
+      margin-left: -150px;
+    }
+    .content-01 .tx-01 p{
+      font-family: Comfortaa;
+      margin-left: -120px;
+    }
+    .content-01 .tx-01{
+      margin-left: 300px;
+      margin-top: 60%;
+    }
+  }
+  @media (max-width: 768px) {
+    .content-01 .tx-01 h1{
+      font-family: Comfortaa;
+      font-size: 85px;
+      width: 320px;
+      margin-left: -150px;
+    }
+    .content-01 .tx-01 p{
+      font-family: Comfortaa;
+      margin-left: -120px;
+    }
+    .content-01 .tx-01{
+      margin-left: 200px;
+      margin-top: 70%;
+    }
+    .img-tx{
+      margin-top: 0px;
+    }
+  }
+  @media (max-width: 425px) {
+    .content-01 .tx-01 h1{
+      font-family: Comfortaa;
+      font-size: 65px;
+      width: 250px;
+      margin-left: -150px;
+    }
+    .content-01 .tx-01 p{
+      font-family: Comfortaa;
+      margin-left: -120px;
+      margin-top: -30px;
+    }
+    .content-01 .tx-01{
+      margin-left: 180px;
+      margin-top: 95%;
+    }
+  }
+  @media (max-width: 320px) {
+    .content-01 .tx-01 h1{
+      font-family: Comfortaa;
+      font-size: 50px;
+      width: 200px;
+      margin-left: -150px;
+    }
+    .content-01 .tx-01 p{
+      font-family: Comfortaa;
+      margin-left: -120px;
+      margin-top: -30px;
+    }
+    .content-01 .tx-01{
+      margin-left: 170px;
+      margin-top: -30%;
+    }
+  }
+  </style>
+  <section class="sec">
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="index.html">
+            <img src="../../../img/logo-04.png" alt="Logo">
+          </a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fa fa-times"></i>
+          </div>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="bildings.html" >Здания</a></li>
+          <li><a href="#" class="active">О нас</a></li>
+          <li><a href="contact.html">Контакт</a></li>
+
+          <div class="language">
+            <a href="../arm/about.html"><img  src="../../../img/flags/armenia-flag.png" alt="Armenian"></a>
+            <a href="#"><img class="active" src="../../../img/flags/russia-flag.png" alt="Русский"></a>
+            <a href="../../about.html"><img src="../../../img/flags/usa.png" alt="English"></a>
+          </div>
+
+          <div class="mode">
+            <div class="toggle"></div>
+          </div>
+        </ul>
+
+        <div class="icon menu-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="banner">
+        <div class="container-02">
+          <div class="content-01">
+            <div class="tx-01">
+              <h1>О нас</h1>
+              <p><a href="#second">Спускаться <i class="fa fa-arrow-circle-o-down"></i></a></p>
+          </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="img-tx" id="second">
+      <div class="img">
+        <img src="../../../img/gyumri/g-04.jpg" alt="">
+      </div>
+      <div class="tx">
+        <h2>Spirit Gyumri</h2>
+        <p>Команда <b>Spirit Gyumri</b> появилась в рамках программы <b>UP Shift</b> в 2021 году. В команду входят талантливые подростки от 13 до 16 лет. Благодаря своему упорному труду они получили то, что хотели, то, что вы видите</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+
+    const sec = document.querySelector('.sec');
+    const toggle = document.querySelector('.toggle');
+    toggle.onclick = function(){
+      sec.classList.toggle('dark')
+    }
+  </script>
+
+</body>
+</html>
